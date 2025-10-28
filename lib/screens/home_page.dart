@@ -11,8 +11,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text('Detalle de movimientos', style: TextStyle(fontSize: 15),),
        actions: [
         IconButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blueGrey
+          ),
           color: Colors.amberAccent,
-          iconSize: 40,          
+          iconSize: 26,          
           onPressed: () {
           Navigator.pushNamed(context, '/plantillaPpto');
         },
